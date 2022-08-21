@@ -1,0 +1,24 @@
+{
+    "entities": [
+        {
+            "type" : "player",
+            "x" : 0,
+            "y" : 0
+        }, {
+            "type" : "spider",
+            "x" : 1,
+            "y" : 1
+        },  {
+            "type" : "treasure",
+            "x" : 2,
+            "y" : 0
+        }
+    ],
+    "goal-condition": {
+        "goal": "OR",
+        "subgoals": [
+            {"goal": "enemies"},
+            {"goal": "treasure"}
+        ]
+    }
+}
